@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color1: #4F5DFF;
+  --color2: #000D99;
+  --light-color1: #E7E7E7;
+  --space-color1: blueviolet;
+}
+
+html {
+  font-family: "Rubik", serif;
+}
+
+header {
+  background: var(--color1);
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  height: 90vh;
+  padding: 1em;
+}
+
+.about-me {
+  background: var(--light-color1);
+  padding: .2em;
+}
+
+.cooperation {
+  background: var(--light-color1);
+  margin-block: 1em;
+  padding: .2em;
+  text-align: center;
+}
+
+.cooperation p {
+  border: 2px solid var(--color2);
+  padding: .2em;
+}
+
+p {
+  text-align: start;
+  background: var(--light-color1);
+}
+
+footer {
+  background: var(--color1);
+  padding: 1em;
+  text-align: center;
+}
+
+.mini-ad {
+  border: 2px solid var(--color1);
+  padding: .5em;
+}
+
+.mini-ad .ad-title {
+  text-align: center;
+  padding: .5em;
+}
+
+.ad-links {
+  background: var(--light-color1);
+  border: 2px solid var(--color2);
+  margin-block: 1em;
+  font-size: .850em;
+}
+
+.ad-links h3 {
+  text-align: center;
+}
