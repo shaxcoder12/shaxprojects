@@ -30,3 +30,13 @@ button.addEventListener("click", () => {
   tg.sendData(JSON.stringify(data))
 })
 
+
+let url = "https://shaxcoder12.github.io/shaxprojects/telegramapi/quizapp/main.sj"
+
+// Функция для получения данных, отправленных с Python бота
+fetch(url)
+    .then(response => response.json())  // Преобразуем ответ в формат JSON
+    .then(data => {
+        console.log('Полученные данные:', data);
+    })
+    .catch(error => console.error('Ошибка:', error));
