@@ -36,7 +36,6 @@ button.addEventListener("click", () => {
       textToCopy.select()
       textToCopy.setSelectionRange(0, 9999)
       document.execCommand("copy")
-      alert(`Пароль скопирован`)
     })
     }
   }
