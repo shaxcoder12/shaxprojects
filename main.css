@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  font-family: "Rubik", serif;
+}
+
+:root {
+  --clr1: #E6E8E6;
+  --clr2: #CED0CE;
+  --clr3: #9FB8AD;
+  --clr4: #475841;
+  --clr5: #3F403F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--clr3);
+  margin: 0;
+}
+
+header {
+  background: var(--clr5);
+  text-align: center;
+  padding: .8em;
+  color: var(--clr2);
+  margin-bottom: 1em;
+  box-shadow: 0 0 1em var(--clr5);
+}
+
+a {color: grey}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1em;
+}
+
+.project {
+  margin: .5em;
+  display: flex;
+  flex-direction: column;
+  background: var(--clr4);
+  padding: 1em 3em;
+  text-align: center;
+  border-radius: .4em;
+  box-shadow: 0 0 1em;
+}
+
+.project-title {
+  margin: .3em;
+  background: var(--clr5);
+  color: white;
+  padding: .3em;
+  border-radius: 1em;
+}
+
+.project-link {
+  margin-top: 1em;
+}
