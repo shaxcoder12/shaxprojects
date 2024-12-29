@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  font-family: "Rubik", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cl1: #2A2B2E;
+  --cl2: #42434A;
+  --cl3: #5A5A66;
+  --cl4: #A4C2A8;
+  --cl5: #ACEB98;
+}
+
+body {background: #EDEDED}
+
+header {
+  background: var(--cl1);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+main {}
+
+a {
+  color: grey;
+  filter: drop-shadow(0 0 1em black)
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: .5em;
+}
+
+.project {
+  background: var(--cl2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: .5em 1em;
+  padding: 1em;
+  border-radius: .3em;
+  box-shadow: 0 0 1em black;
+  transition: all .5s ease;
+}
+
+.project-title img {
+  height: 2.5em;
+  border-radius: .5em;
+  margin-right: .5em;
+}
+
+.project-title {
+  display: flex;
+  background: var(--cl3);
+  padding: .3em;
+  margin: .2em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.project-description {
+  background: var(--cl3);
+  padding: .2em;
+  border-radius: .5em;
+}
+
+.project-link {
+  text-align: center;
+  background: var(--cl1);
+  border-radius: 0 1em 0 1em;
+}
+
+.project:hover {
+  transform: scale(1.05)
+}
+
+.about-me {
+  background: #FFFFFF;
+  margin: .5em 1em;
+  padding: 1em;
+  border-radius: .3em;
+  box-shadow: 0 0 1em #454545;
+  transition: all .5s ease;
+  /* filter: drop-shadow(0 0 1em black); */
+}
+
+.about-me:hover {
+  transform: scale(1.05);
+}
+
+.about-me-title {filter: drop-shadow(.1em .1em 1em blue)}
+
+.about-me > * {
+  margin: .5em;
+}
+
+footer {
+  background: var(--cl3);
+  padding: 1em .5em;
+  margin-top: 2em;
+  text-align: center;
+  border-radius: 1em 1em 0 0;
+}
