@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  font-family: "Rubik", serif;
+}
+
+:root {
+  --grc1: #071CFF;
+  --grc2: #CE07FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  background: linear-gradient(to right, #071CFF, #CE07FF);
+}
+
+body {
+  background: #DF54FF;
+}
+
+main {
+  background: linear-gradient(to right, #CE07FF, #071CFF);
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  margin: .5em;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+button {
+  width: 40%;
+  height: 5em;
+  border: 2px solid black;
+  background: linear-gradient(to right, #071CFF, #CE07FF);
+  border-radius: .5em;
+  margin-inline: auto;
+  transition: all .5s ease;
+}
+
+button:hover {
+  box-shadow: 0 0 1em deeppink;
+}
+
+#pw-result {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#pw-result input {
+  width: 35%;
+  margin-inline: auto;
+  text-align: center;
+  background: no-repeat;
+  border: 1px solid black;
+  padding: .3em;
+  border-radius: .2em;
+  font-size: 1.5em;
+}
+
+#pw-result >*{
+  margin-block: .3em;
+}

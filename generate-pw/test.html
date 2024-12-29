@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Копирование текста</title>
+</head>
+<body>
+  <h1>Пример копирования текста</h1>
+  <input type="text" id="textToCopy" value="Текст для копирования">
+  <button id="copyButton">Скопировать текст</button>
+
+  <script>
+    document.getElementById("copyButton").addEventListener("click", () => {
+      const textToCopy = document.getElementById("textToCopy");
+      textToCopy.select(); // Выделение текста
+      textToCopy.setSelectionRange(0, 99999); // Для мобильных устройств
+      document.execCommand("copy"); // Копирование текста
+      alert("Текст скопирован: " + textToCopy.value);
+    });
+  </script>
+</body>
+</html>
