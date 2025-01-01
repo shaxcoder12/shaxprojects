@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+  font-family: "Rubik", serif;
+  /* font-family: "Press Start 2p", serif; */
+}
+
+:root {
+  --bg-color: #262626;
+  --hd-color: #373737;
+  --text-color: #EAEAEA;
+  --border-color: #A80EFF;
+}
+/*
+
+:root {
+  --bg-color: #F8F8F8;
+  --hd-color: #FFFDA0;
+  --text-color: #151515;
+  --border-color: #595959;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--hd-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: .5em;
+  text-align: center;
+}
+
+header button {
+  right: 1em;
+  top: .5em;
+  position: fixed;
+  background: no-repeat;
+  border: none;
+  height: 3em;
+  width: 3em;
+}
+
+img {
+  width: 3em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main >* {
+  margin-block: .2em;
+}
+
+.anons-container {
+  padding: 1em 2em;
+  filter: drop-shadow(0 0 1em var(--border-color));
+}
+
+.family-box {
+  font-family: "Inter", serif;
+  margin: 1em;
+  padding: .5em;
+  border: 2px solid var(--border-color);
+  border-radius: .5em;
+}
+
+.best-friend-box {
+  margin: 1em;
+  padding: .5em 2em;
+  border: 2px solid var(--border-color);
+  border-radius: .5em;
+}
+
+.bsb-title {
+  text-align: center;
+}
+
+.best-friend-box li {
+  filter: drop-shadow(0 0 1em var(--border-color));
+}
+
+.achievement-box {
+  margin: 1em;
+  padding: .5em;
+  border: 2px solid var(--border-color);
+  border-radius: .5em;
+}
+
+.achievement-box >* {
+  margin-block: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: .5em;
+  padding: 1em;
+}
+
+.ac-title {
+  font-size: 1.5em;
+  margin: .5em;
+}
+
+.mind {
+  display: none;
+  border: 2px solid darkred;
+  margin: 1em;
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.mind-open, .mind-close {
+  margin: 1em;
+  padding: 1em;
+  border-radius: .5em;
+  border: 2px solid var(--border-color);
+  text-align: center;
+}
+
+.mind-open button, .mind-close button {
+  padding: .5em;
+  border: 2px solid var(--border-color);
+  border-radius: .3em;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.mind-close {
+  display: none;
+}
