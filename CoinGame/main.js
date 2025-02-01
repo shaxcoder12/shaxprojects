@@ -21,5 +21,5 @@ sendBalance.addEventListener("click", () => {
     "balance": userBalance
   }
   tg.sendData(JSON.stringify(data));
-  tg.close()
+  
 })
