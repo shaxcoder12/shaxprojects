@@ -18,7 +18,7 @@ coinClick.addEventListener("click", () => {
 
 sendBalance.addEventListener("click", () => {
   let data = {
-    balance: userBalance
+    "balance": userBalance
   }
   tg.sendData(JSON.stringify(data));
   tg.close()
