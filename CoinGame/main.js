@@ -7,6 +7,7 @@ let oneClick = 1
 let clickLimit = 100
 
 let tg = window.Telegram.WebApp;
+
 tg.expand()
 
 coinClick.addEventListener("click", () => {
