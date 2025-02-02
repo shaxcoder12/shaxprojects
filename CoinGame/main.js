@@ -1,25 +1,22 @@
-let coinClick = document.querySelector("#coin-click");
-let balanceView = document.querySelector(".balance");
+let coinClick = document.querySelector("#coin-click")
+let balanceView = document.querySelector(".balance")
 let sendBalance = document.querySelector("#send-balance")
 
-let userBalance = 0
-let oneClick = 1
-let clickLimit = 100
+let userBalance = 0;
+let oneClick = 1;
 
 let tg = window.Telegram.WebApp;
-alert("Working")
+tg.expand()
 
 coinClick.addEventListener("click", () => {
   userBalance += oneClick;
-  balanceView.innerHTML = `
-  <h2>Balance: ${userBalance}</h2>
-  `
+  balanceView.textContent = `Balance: ${userBalance}`
 })
 
 sendBalance.addEventListener("click", () => {
-  let data = {
-    "balance": userBalance
+  data = {
+    balance: userBalance
   }
   tg.sendData(JSON.stringify(data));
-  
+  tg.close()
 })
