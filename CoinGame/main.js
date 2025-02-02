@@ -7,7 +7,7 @@ let oneClick = 1
 let clickLimit = 100
 
 let tg = window.Telegram.WebApp;
-alert(tg)
+alert("Working")
 
 coinClick.addEventListener("click", () => {
   userBalance += oneClick;
