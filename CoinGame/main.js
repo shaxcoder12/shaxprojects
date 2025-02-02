@@ -6,7 +6,7 @@ let userBalance = 0
 let oneClick = 1
 let clickLimit = 100
 
-let tg = window;
+let tg = window.Telegram;
 alert(window)
 
 coinClick.addEventListener("click", () => {
