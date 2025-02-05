@@ -4,22 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TGgame</title>
+  <title>NetPoint</title>
   <link rel="stylesheet" href="main.css">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
   
   <header>
-    <h1>CoinGame</h1>
+    <h1>NetPoint</h1>
+    <div class="balance-box">
+      <h3 id="balance">0</h3>
+      <img src="dollar.png" alt="">
+    </div>
   </header>
   
   <main>
-    <button id="coin-click">
-      <img id="coin-img" src="coin.png" alt="Click here!">
+    <button id="coinClick">
+      <img id="coinClickimg" src="dollar.png" alt="Click here!">
     </button>
-    <h2 class="balance">Balance: 0</h2>
-    <button id="send-balance">Save Balance</button>
+    <p class="about-click">One click +1 coin</p>
+    
+    <div class="sale-container">
+      <button id="save-data" class="mdl-btn"><h3>Save Data</h3></button>
+      <button id="clickUpdate" class="mdl-btn"><h3>Click Update</h3><h3>+2C</h3><h3>200C</h3></button>
+      <button id="buy-randomer" class="mdl-btn"><h3>Randomer</h3><h3>5000C</h3></button>
+    </div>
+    
+    <input type="text" id="promo" value="Promo" placeholder="Promo">
+    <button id="promo-btn">Get promo</button>
   </main>
 
 <script src="main.js"></script>
