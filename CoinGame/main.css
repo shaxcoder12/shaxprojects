@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-  font-family: "Inter", serif;
+  font-family: "Rubik", serif;
   margin: 0;
   padding: 0;
 }
@@ -13,50 +13,90 @@
 }
 
 body {
-  background: var(--cl1);
+  background: var(--cl2);
+  color: white;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  background: var(--cl3);
-  color: white;
   padding: .5em;
-  text-align: center;
+  background: var(--cl1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-#coin-img {
+main #coinClick {
+  background: no-repeat;
+  border: none;
+  transition: all .5s ease;
+  margin-block: 1em
+}
+
+main #coinClick:active {
+  transform: scale(.99);
+  filter: drop-shadow(0 0 .5em #FFD700);
+}
+
+main #coinClickimg {
   width: 80%;
 }
 
-.balance {
-  margin: 1em;
-  color: white;
+.sale-container {
+  margin-block: 2em;
+  padding: .2em;
+  backdrop-filter: blur(1em);
+  border: 2px solid var(--cl3);
+  border-radius: .5em;
+  width: 80%;
+  
 }
 
-#coin-click {
-  background: no-repeat;
-  border: none;
-  transition: all .1s ease;
-}
-
-#coin-click:active {
-  transform: scale(0.99);
-  filter: drop-shadow(0 0 .5em black);
-}
-
-#send-balance {
+.sale-container button {
+  border: 2px solid var(--cl3);
+  border-radius: .5em;
   padding: .5em;
-  background: var(--cl2);
-  border: 2px solid var(--cl1);
+  width: 100%;
+  background: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: .1em;
+}
+
+.mdl-btn:active {
+  box-shadow: 0 0 .1em red;
+}
+
+.balance-box {
+  background: var(--cl3);
+  display: flex;
+  padding: .1em;
+  width: 7em;
+  justify-content: end;
+  border-radius: 1em;
+  align-items: center;
+}
+
+.balance-box img {
+  margin-left: 2px;
+  width: 1em;
+  height: 1em;
+}
+
+#promo, #promo-btn{
+  background: no-repeat;
+  border: 2px solid var(--cl3);
+  padding: .5em;
   border-radius: .5em;
   color: white;
+  margin-block: .1em;
 }
