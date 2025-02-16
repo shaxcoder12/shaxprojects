@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cl1: #F0F2FF;
+  --cl2: #1A0489;
+}
+
+body {
+  background: var(--cl2);
+}
+
+header {
+  background: white;
+  padding-block: 1.5em 2em;
+  padding-inline: 2em;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 2em 2em;
+}
+
+header img {
+  width: 2.5em;
+}
+
+header >* {
+  margin-inline: .5em
+}
+
+main {
+  padding: 2em 1em;
+  color: white;
+}
+
+.game-box img {
+  height: 7em;
+  border-radius: .5em;
+}
+
+.game-types-container {
+  overflow: hidden;
+}
+
+.game-types-box {
+  display: flex;
+  margin-block: .5em 2em;
+  overflow-x: auto;
+}
+
+.game-type {
+  margin: 0 .5em;
+  border: 1.5px solid var(--cl1);
+  padding: .5em;
+  border-radius: 2em;
+}
+
+.games-container-x {
+  overflow: hidden;
+}
+
+.games-container-title {
+  margin-block: 0 .5em;
+}
+
+.games-slayd-x {
+  overflow-x: auto;
+  display: flex;
+}
+
+.game-box {
+  margin-inline: .5em;
+}
+
+.game-box-y img {
+  height: 2.8em;
+  border-radius: .5em;
+}
+
+.game-box-y {
+  background: white;
+  border-radius: .8em;
+  margin: 1em 1em;
+  display: flex;
+  color: var(--cl2);
+  align-items: center;
+  padding: 1em;
+}
+
+.game-title-y {
+  margin: 0 1em;
+}
+
+.games-container-y {
+  margin-top: 2em;
+}
+
+.game-btn-y {
+  background: var(--cl1);
+  border: 2px solid var(--cl2);
+  border-radius: .5em;
+  padding: .5em;
+  margin-inline: auto;
+}
+
+footer {
+  background: #161B4C;
+  color: #000EC1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1em;
+}
+
+/*
+
+GAME VIEW STYLES
+
+*/
+
+.game-view-header-img {
+  width: 4em;
+  border-radius: .5em;
+}
+
+.with-width {
+  height: 7.5em;
+  border-radius: .8em;
+  margin-inline: .5em;
+}
+
+.game-description {
+  background: #02063B;
+  margin-block: .5em;
+  border-radius: .5em;
+  padding: .5em;
+}
