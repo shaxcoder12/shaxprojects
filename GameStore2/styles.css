@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,100..500;1,100..500&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,250..450;1,250..450&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Inter", serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cl1: #222222;
+  --cl2: white;
+}
+
+header {
+  background: var(--cl1);
+  color: white;
+  padding: 1.5em 3em;
+  border-radius: 0 0 2em 2em;
+  text-align: center;
+}
+
+main {
+  padding: 1em .5em;
+}
+
+.container {
+  background: var(--cl1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-radius: 1em;
+  margin-block: .5em
+}
+
+.container img {
+  width: 100%;
+  border: 1.5px solid white;
+  border-radius: .5em;
+}
+
+.container h3, p { align-self: start; }
+
+.container div {
+  background: white;
+  color: black;
+  border-radius: .5em;
+  margin-block: .5em;
+  padding: .5em;
+  width: auto;
+}
+
+footer {
+  position: fixed;
+  background: var(--cl1);
+  color: white;
+  padding: .7em 1em;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-left: .3em;
+}
+
+/*
+
+GAME VIEW STYLES
+
+*/
+
+.game-view-header {
+  background: var(--cl1);
+  color: white;
+  padding: 1.5em 2em;
+  border-radius: 0 0 2em 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.game-view-header button {
+  background: no-repeat;
+  border: none;
+}
+
+.game-view-header button img {
+  height: 2.5em;
+  width: 2.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.game-view-header img {
+  height: 5em;
+  width: 5em;
+  border: 2px solid white;
+  border-radius: .5em;
+}
+
+.game-view-header div {
+  padding: 0 1em;
+  text-align: start;
+}
+
+.game-view-screens {
+  overflow: hidden;
+  border-block: 2px solid black;
+  border-radius: .5em;
+}
+
+.game-view-screens-box {
+  overflow: auto;
+  display: flex;
+}
+
+.game-view-screens-box img {
+  height: 8em;
+  margin-inline: .1em;
+  border: 2px solid black;
+  border-radius: .5em;
+}
+
+.game-view-screens-box video, .game-view-screens-box iframe {
+  height: 8em;
+  margin-inline: .1em;
+  border: 2px solid black;
+  border-radius: .5em;
+}
+
+.game-view-panel {
+  margin: .5em 0;
+  display: flex;
+}
+
+.download-btn {
+  align-items: center;
+  position: relative;
+}
+
+.download-btn img {
+  height: 2.5em;
+  border: 2px solid black;
+  border-radius: .5em;
+}
+
+.game-view-des {
+  padding: .25em;
+  background: #2A2A2A;
+  color: white;
+  border-radius: .5em;
+}
