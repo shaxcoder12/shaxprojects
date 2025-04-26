@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Красивый сайт</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #444;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #222;
+            text-align: center;
+            color: #ccc;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .button {
+            display: inline-block;
+            background: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #6a11cb;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать!</h1>
+    <p>Создаем будущее вместе</p>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#portfolio">Портфолио</a>
+    <a href="#team">Команда</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<div class="container">
+    <div class="card" id="home">
+        <h2>Главная</h2>
+        <p>Наш сайт — это место, где инновации встречаются с качеством. Мы помогаем бизнесу расти и процветать в цифровую эпоху.</p>
+        <a href="#services" class="button">Узнать больше</a>
+    </div>
+
+    <div class="card" id="about">
+        <h2>О нас</h2>
+        <p>Наша команда состоит из талантливых специалистов, которые страстно увлечены технологиями и креативностью. Мы стремимся создавать решения, которые делают мир лучше.</p>
+    </div>
+
+    <div class="card" id="services">
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Разработка сайтов и веб-приложений</li>
+            <li>Брендинг и дизайн</li>
+            <li>Маркетинговые кампании</li>
+            <li>Поддержка и сопровождение проектов</li>
+        </ul>
+    </div>
+
+    <div class="card" id="portfolio">
+        <h2>Портфолио</h2>
+        <img src="https://via.placeholder.com/1000x400?text=Проект+1" alt="Проект 1">
+        <p>Мы гордимся нашими проектами: от малых бизнес-сайтов до масштабных корпоративных решений.</p>
+    </div>
+
+    <div class="card" id="team">
+        <h2>Наша команда</h2>
+        <p>Мы верим, что люди — это главное. Наши разработчики, дизайнеры и менеджеры работают вместе, чтобы создавать удивительные продукты.</p>
+        <img src="https://via.placeholder.com/1000x300?text=Наша+команда" alt="Наша команда">
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Контакты</h2>
+        <p>Хотите начать проект или задать вопрос? Свяжитесь с нами!</p>
+        <p><strong>Email:</strong> info@example.com</p>
+        <p><strong>Телефон:</strong> +7 900 123-45-67</p>
+        <a href="mailto:info@example.com" class="button">Написать нам</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Все права защищены. Создано с любовью.</p>
+</footer>
+
+</body>
+</html>
