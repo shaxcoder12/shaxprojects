@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+        
+* {
+  font-family: "ARCHIVO", serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+:root {
+  --color1: #F8B179;
+  --color2: #161E31;
+  --color3: #2D3250;
+  --color4: #424669;
+  --color5: #ffffff;
+  --shadow: #11182B;
+}
+
+header, main, footer { padding: 1em; }
+a { text-decoration: none; color: white; }
+
+footer {
+  background: var(--color3);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  background: var(--color2);
+  color: white;
+}
+
+header  {
+  background: var(--color3);
+  color: white;
+}
+
+.box {
+  background: var(--color3);
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  border-radius: .5em;
+  box-shadow: 0 0 1em var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  transition: all .5s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 .5em var(--color4);
+}
+
+button {
+  background: var(--color1);
+  padding: .5em 1.5em;
+  border: none;
+  border-radius: .5em;
+  box-shadow: 0 0 1em var(--color1);
+  color: var(--color2);
+}
